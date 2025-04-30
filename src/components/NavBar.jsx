@@ -1,12 +1,16 @@
-import { NavLink } from "react-router-dom";
-import "./NavBar.css";
+// src/components/NavBar.jsx
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-function NavBar() {
+const NavBar = () => {
   return (
-    <nav className="navbar">
-    
-    </nav>
-    );
+    <div className="navbar">
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/actors">Actors</NavLink>
+      <NavLink to="/directors">Directors</NavLink>
+    </div>
+  );
 };
 
 export default NavBar;
